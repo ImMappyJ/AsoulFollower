@@ -1,0 +1,13 @@
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\AsoulFollower.exe
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\AsoulFollower.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\AsoulFollower.deps.json
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\AsoulFollower.runtimeconfig.json
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\AsoulFollower.pdb
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\ControlzEx.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\HandyControl.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\MahApps.Metro.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\Microsoft.Xaml.Behaviors.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\Newtonsoft.Json.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\QRCoder.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\zh-CN\HandyControl.resources.dll
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Release\net6.0-windows\publish\de\MahApps.Metro.resources.dll

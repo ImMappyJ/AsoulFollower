@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AsoulFollower</id>
+    <version>1.0.0</version>
+    <authors>AsoulFollower</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="HandyControl" version="3.4.0" exclude="Build,Analyzers" />
+        <dependency id="HandyControls.Lang.zh-CN" version="3.4.4" exclude="Build,Analyzers" />
+        <dependency id="MahApps.Metro" version="2.4.9" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="QRCoder" version="1.4.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Debug\net6.0-windows\AsoulFollower.runtimeconfig.json" target="lib\net6.0-windows7.0\AsoulFollower.runtimeconfig.json" />
+    <file src="D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\bin\Debug\net6.0-windows\AsoulFollower.dll" target="lib\net6.0-windows7.0\AsoulFollower.dll" />
+  </files>
+</package>

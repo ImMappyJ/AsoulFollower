@@ -6,7 +6,7 @@
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:local="clr-namespace:AsoulFollower.xamls"
         mc:Ignorable="d"
-        Title="新动态提醒" Height="230" Width="405" Opacity="0.7" Loaded="MetroWindow_Loaded" ResizeMode="NoResize" Topmost="True">
+        Title="新动态提醒" Height="230" Width="405" Opacity="0.7" Loaded="MetroWindow_Loaded" ResizeMode="NoResize" Topmost="True" Icon="/icon.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="13*"/>

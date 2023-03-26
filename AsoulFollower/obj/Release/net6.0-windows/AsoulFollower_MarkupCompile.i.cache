@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\obj\Debug\net6.0-windows\
+D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\obj\Release\net6.0-windows\
 AsoulFollower
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 D:\Project\C++\Practice\AsoulFollower\AsoulFollower\AsoulFollower\App.xaml
 51491515577
-1-1606303973
-26-1394299250
+
+261490791637
 201896647837
 MainWindow.xaml;xamls\BallonMessage.xaml;xamls\Following.xaml;xamls\Login.xaml;xamls\UserDynamics.xaml;
 
-False
+True
 
