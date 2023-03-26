@@ -1,0 +1,28 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AsoulFollower.xaml"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Name="FollowingControl" x:Class="AsoulFollower.xaml.Following"
+             mc:Ignorable="d" Height="110" Width="980">
+    <Grid HorizontalAlignment="Center" Width="980" Height="100" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="643*"/>
+            <ColumnDefinition Width="175*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Head" HorizontalAlignment="Left" Height="95" Margin="25,5,0,0" VerticalAlignment="Top" Width="95" Grid.RowSpan="2" Source="{Binding HeadURLSource}">
+            <Image.Clip>
+                <EllipseGeometry RadiusX="47.5" RadiusY="47.5" Center="47.5,47.5"/>
+            </Image.Clip>
+        </Image>
+        <Label x:Name="Name" Content="{Binding NameText}" HorizontalAlignment="Left" VerticalAlignment="Center" Height="50" Width="798" MaxWidth="800" Grid.ColumnSpan="2" FontSize="30" FontStretch="Condensed" Grid.Column="1"/>
+        <TextBlock x:Name="Sign" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding SignText}" VerticalAlignment="Center" Height="40" Width="623" MaxWidth="800" FontSize="15" Grid.Row="1" Grid.Column="1"/>
+        <mah:ToggleSwitch x:Name="SelectedSwitch" Grid.Column="2" Height="31" Width="134" IsOn="{Binding IsSelected}" mah:HeaderedControlHelper.HeaderVerticalContentAlignment="Bottom" OffContent="未订阅" OnContent="订阅" Grid.Row="1" HorizontalAlignment="Center" Toggled="SelectedSwitch_Toggled"/>
+    </Grid>
+</UserControl>

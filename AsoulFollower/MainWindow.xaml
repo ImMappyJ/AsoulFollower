@@ -1,0 +1,70 @@
+﻿<mah:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsoulFollower"
+        xmlns:xaml="clr-namespace:AsoulFollower.xaml" x:Name="SoftWindow" x:Class="AsoulFollower.MainWindow"
+        mc:Ignorable="d"
+        Title="AsoulFollower" Height="665" Width="1140" ResizeMode="CanMinimize" Icon="/icon.png" Initialized="MetroWindow_Initialized" Loaded="MetroWindow_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="983*"/>
+        </Grid.ColumnDefinitions>
+        <mah:MetroTabControl x:Name="Menu" Grid.Column="1" SelectedIndex="1">
+            <TabItem Header="主页" IsSelected="True">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="68*"/>
+                        <ColumnDefinition Width="35*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="157*"/>
+                        <RowDefinition Height="240*"/>
+                    </Grid.RowDefinitions>
+                    <mah:FlipView x:Name="Banners" Grid.Column="1" Grid.Row="0" SelectionChanged="Banners_SelectionChanged" MouseDoubleClick="Banners_MouseDoubleClick"/>
+                    <ListBox x:Name="ListBox_Dynamics" Grid.ColumnSpan="3" Margin="0,5,0,0" Grid.Row="1" ScrollViewer.CanContentScroll="False">
+                        <ListBoxItem Content="正在加载中..."/>
+                    </ListBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="列表">
+                <Grid Background="White">
+                    <ListBox x:Name="ListBox_Following" ScrollViewer.CanContentScroll="False" IsSynchronizedWithCurrentItem="True"/>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="38" Header="日志" VerticalAlignment="Center" Width="117">
+                <Grid Background="#FFE5E5E5">
+                    <ListView x:Name="ListView_Log"  IsSynchronizedWithCurrentItem="False">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="类型" Width="50" DisplayMemberBinding="{Binding Type}"/>
+                                <GridViewColumn Header="时间" Width="100" DisplayMemberBinding="{Binding Time}"/>
+                                <GridViewColumn Header="内容" Width="850" DisplayMemberBinding="{Binding Content}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+        </mah:MetroTabControl>
+        <mah:ToggleSwitch x:Name="BallonSwitch" Height="55" Header="更新弹窗" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Grid.ColumnSpan="2" OffContent="关闭" OnContent="开启" Toggled="BallonSwitch_Toggled"/>
+        <mah:ToggleSwitch x:Name="NotifySwitch" Height="55" Header="托盘菜单" Margin="10,95,0,0" VerticalAlignment="Top" Width="154" Grid.ColumnSpan="2" OffContent="关闭" OnContent="开启" FontFamily="Microsoft YaHei" Toggled="NotifySwitch_Toggled"/>
+        <hc:NotifyIcon x:Name="NotifyMenu" HorizontalAlignment="Left" Height="100" Margin="0,550,0,0" VerticalAlignment="Top" Width="100" Icon="/icon.png" Text="Asoul时代！沸腾期待！" MouseDoubleClick="NotifyMenu_MouseDoubleClick">
+            <hc:NotifyIcon.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="MenuItem_Show" Header="显示" Click="MenuItem_Show_Click" />
+                    <MenuItem x:Name="MenuItem_Exit" Header="退出" Click="MenuItem_Exit_Click" />
+                </ContextMenu>
+            </hc:NotifyIcon.ContextMenu>
+        </hc:NotifyIcon>
+        <Image x:Name="Image_UserFace" HorizontalAlignment="Left" Height="120" Margin="16,350,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Label_UserName" Content="" HorizontalAlignment="Left" Margin="16,485,0,0" VerticalAlignment="Top" Width="130" Height="25"/>
+        <Label x:Name="Label_Coin" Content="" HorizontalAlignment="Left" Margin="16,515,0,0" VerticalAlignment="Top" Width="130" Height="25"/>
+        <Button x:Name="Button_ExitAccount" Content="退出登录" HorizontalAlignment="Center" Height="30" Margin="0,570,0,0" VerticalAlignment="Top" Width="90" Click="Button_ExitAccount_Click"/>
+        <mah:ToggleSwitch x:Name="AutoLikeSwitch" Height="55" Header="自动点赞" Margin="10,180,0,0" VerticalAlignment="Top" Width="154" Grid.ColumnSpan="2" OffContent="关闭" OnContent="开启" FontFamily="Microsoft YaHei" Toggled="AutoLikeSwitch_Toggled"/>
+    </Grid>
+</mah:MetroWindow>

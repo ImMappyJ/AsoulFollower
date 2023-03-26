@@ -1,0 +1,20 @@
+﻿<mah:MetroWindow x:Class="AsoulFollower.xamls.BallonMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:AsoulFollower.xamls"
+        mc:Ignorable="d"
+        Title="新动态提醒" Height="230" Width="405" Opacity="0.7" Loaded="MetroWindow_Loaded" ResizeMode="NoResize" Topmost="True">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="14*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="FaceImage" HorizontalAlignment="Left" Height="100" Margin="10,25,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="Label_Uname" Content="UserName" HorizontalAlignment="Left" Margin="132,35,0,0" VerticalAlignment="Top" Width="243" FontSize="18" Height="35" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_Content" Content="UserName" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Height="60" Width="385" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</mah:MetroWindow>
