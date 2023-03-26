@@ -1,5 +1,5 @@
 # AsoulFollower
->> Version: 1.0.0
+> Version: 1.0.0
 -----------------
 ## 使用方法
 > 在Release下载压缩包
